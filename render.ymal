@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: lawve-flask-app
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    envVars:
+      - key: OPENAI_API_KEY
+        value: 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
